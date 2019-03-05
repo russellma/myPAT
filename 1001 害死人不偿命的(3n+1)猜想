@@ -4,11 +4,11 @@ using namespace std;
 int main(){
   
   int n,count=0;
-  cin>>n;
+  cin>>n;        //忘记了输入；
   while(n!=1){
-    if(n%2) n=3*n+1;
+    if(n%2) n=3*n+1;    //把模运算写成了除运算
     n/=2;
-    ++count;
+    ++count;       //把两步合为一步，特别重要
   }
   cout<<count;
   
